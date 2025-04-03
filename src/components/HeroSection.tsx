@@ -50,7 +50,7 @@ const HeroSection = () => {
               </li>
               <li className="flex items-center text-sm">
                 <span className="bg-brand-orange/20 text-brand-orange rounded-full p-1 mr-2">✓</span>
-                <span>Insurance accepted at most locations</span>
+                <span>Insurance accepted</span>
               </li>
               <li className="flex items-center text-sm">
                 <span className="bg-brand-orange/20 text-brand-orange rounded-full p-1 mr-2">✓</span>
