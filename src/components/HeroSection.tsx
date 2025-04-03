@@ -1,6 +1,4 @@
-
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
@@ -14,7 +12,6 @@ interface FormValues {
 }
 
 const HeroSection = () => {
-  const [sliderValue, setSliderValue] = useState(50);
   const [formSubmitted, setFormSubmitted] = useState(false);
   
   const form = useForm<FormValues>({
@@ -37,10 +34,10 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <div className="bg-brand-orange/10 text-brand-orange text-sm font-semibold inline-block px-3 py-1 rounded mb-2 self-start">
-              Limitless • Low T Clinic
+              Limitless • Low Hormone Clinic
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Increase Your Testosterone Safely with In-Clinic Therapy
+              Increase Your Hormone Levels Safely with In-Clinic Therapy
             </h1>
             <p className="text-gray-600 mb-6">
               Experience personalized wellness solutions to help you feel and look your best
@@ -80,7 +77,7 @@ const HeroSection = () => {
               />
             </div>
             <h3 className="text-xl font-semibold text-center mb-3">
-              Check Your Testosterone Levels Today
+              Check Your Hormone Levels Today
             </h3>
             <p className="text-sm text-gray-600 mb-4 text-center">
               Fill out the form below to see if you qualify for our treatment

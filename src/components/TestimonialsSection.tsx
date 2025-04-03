@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const TestimonialsSection = () => {
@@ -61,7 +60,7 @@ const TestimonialsSection = () => {
             </div>
             
             <p className="text-gray-700 text-sm mb-6">
-              "I was struggling with brain fog and lack of motivation that was affecting my work performance. My doctor recommended checking my testosterone levels, which turned out to be very low for my age. After starting treatment with Apex Labs, not only did my cognitive function improve, but I had the focus and drive to earn a promotion at work!"
+              "I was struggling with brain fog and lack of motivation that was affecting my work performance. My doctor recommended checking my hormone levels, which turned out to be very low for my age. After starting treatment with Apex Labs, not only did my cognitive function improve, but I had the focus and drive to earn a promotion at work!"
             </p>
             
             <div className="flex items-center">

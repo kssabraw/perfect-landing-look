@@ -1,10 +1,9 @@
-
 const SymptomsSection = () => {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-16">
-          How Low Testosterone<br />Affects Men
+          How Low Hormone Levels<br />Affects Men
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -102,7 +101,7 @@ const SymptomsSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-900">Anemia</h4>
-                  <p className="text-sm text-gray-600 mt-1">Low testosterone can contribute to low red blood cell production</p>
+                  <p className="text-sm text-gray-600 mt-1">Low hormone levels can contribute to low red blood cell production</p>
                 </div>
               </div>
               

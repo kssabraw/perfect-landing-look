@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const SolutionSection = () => {
@@ -7,7 +6,7 @@ const SolutionSection = () => {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
           The Ultimate Solution for Sustainable<br />
-          Testosterone Replacement
+          Hormone Replacement
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -43,7 +42,7 @@ const SolutionSection = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-brand-orange mr-2">•</span>
-                <span className="text-sm">Regular blood tests to monitor your testosterone levels</span>
+                <span className="text-sm">Regular blood tests to monitor your hormone levels</span>
               </li>
               <li className="flex items-start">
                 <span className="text-brand-orange mr-2">•</span>

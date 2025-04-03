@@ -4,7 +4,7 @@ const TestosteroneInfo = () => {
     <section className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">
-          Why Does Your<br />Testosterone Decrease?
+          Why Do Your<br />Hormone Levels Decrease?
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
@@ -15,7 +15,7 @@ const TestosteroneInfo = () => {
               </div>
             </div>
             <p className="mt-4 text-sm font-medium">
-              AMERICAN MEN<br />AFFECTED BY LOW T
+              AMERICAN MEN<br />AFFECTED BY LOW HORMONE LEVELS
             </p>
           </div>
           
@@ -32,7 +32,7 @@ const TestosteroneInfo = () => {
             </div>
             <p className="mt-4 text-sm font-medium">
               <span className="text-brand-orange text-3xl font-bold">25%</span><br />
-              DROP IN TESTOSTERONE<br />FROM AGE 30
+              DROP IN HORMONE LEVELS<br />FROM AGE 30
             </p>
           </div>
         </div>
@@ -40,16 +40,16 @@ const TestosteroneInfo = () => {
         <div className="mt-12 max-w-3xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <p className="text-sm text-gray-700 mb-4">
-              Testosterone is a key anabolic hormone that helps men maintain 
+              Hormones are key anabolic compounds that help men maintain 
               muscle mass, strength, bone density, and sex drive in adulthood. 
-              After age 30, men typically lose 1% of their testosterone 
+              After age 30, men typically lose 1% of their hormone levels 
               each year due to normal aging.
             </p>
             <p className="text-sm text-gray-700 mb-4">
               Other factors like poor diet, lack of exercise, high stress, 
               and certain medical conditions can accelerate this decline. 
               Many men don't realize that their symptoms are caused by 
-              declining testosterone levels.
+              declining hormone levels.
             </p>
           </div>
         </div>
