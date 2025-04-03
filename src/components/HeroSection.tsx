@@ -62,9 +62,6 @@ const HeroSection = () => {
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white">
                 Schedule a Free Call
               </Button>
-              <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange/10">
-                Learn More
-              </Button>
             </div>
           </div>
 
