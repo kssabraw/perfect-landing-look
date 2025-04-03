@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -7,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Apex Labs</h3>
+            <h3 className="text-xl font-bold mb-4">Sculpted MD</h3>
             <p className="text-gray-400 mb-4">
-              Specialized in testosterone replacement therapy and men's health optimization.
+              Specialized in hormone replacement therapy and men's health optimization.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
@@ -81,7 +80,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-sm text-center">
-            &copy; {new Date().getFullYear()} Apex Labs. All rights reserved. | <a href="#" className="hover:text-gray-300">Privacy Policy</a> | <a href="#" className="hover:text-gray-300">Terms of Service</a>
+            &copy; {new Date().getFullYear()} Sculpted MD. All rights reserved. | <a href="#" className="hover:text-gray-300">Privacy Policy</a> | <a href="#" className="hover:text-gray-300">Terms of Service</a>
           </p>
           <p className="text-gray-600 text-xs text-center mt-4">
             Disclaimer: Results may vary. Testosterone replacement therapy requires a prescription. 

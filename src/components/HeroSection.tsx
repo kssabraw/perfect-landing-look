@@ -34,7 +34,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <div className="bg-brand-orange/10 text-brand-orange text-sm font-semibold inline-block px-3 py-1 rounded mb-2 self-start">
-              Limitless • Low Hormone Clinic
+              Sculpted MD • Low Hormone Clinic
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Increase Your Hormone Levels Safely with In-Clinic Therapy
