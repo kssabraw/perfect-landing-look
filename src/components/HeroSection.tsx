@@ -2,9 +2,34 @@
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import { useForm } from "react-hook-form";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
+interface FormValues {
+  name: string;
+  email: string;
+  age: string;
+}
 
 const HeroSection = () => {
   const [sliderValue, setSliderValue] = useState(50);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  
+  const form = useForm<FormValues>({
+    defaultValues: {
+      name: "",
+      email: "",
+      age: "",
+    },
+  });
+
+  const onSubmit = (data: FormValues) => {
+    console.log("Form submitted:", data);
+    setFormSubmitted(true);
+    setTimeout(() => setFormSubmitted(false), 3000);
+  };
   
   return (
     <section className="py-8 md:py-16 px-4 md:px-8 bg-white">
@@ -54,34 +79,63 @@ const HeroSection = () => {
                 className="w-28 h-28 object-cover rounded-full border-4 border-white shadow"
               />
             </div>
-            <h3 className="text-xl font-semibold text-center mb-6">
+            <h3 className="text-xl font-semibold text-center mb-3">
               Check Your Testosterone Levels Today
             </h3>
-            <p className="text-sm text-gray-600 mb-6 text-center">
+            <p className="text-sm text-gray-600 mb-4 text-center">
               Fill out the form below to see if you qualify for our treatment
             </p>
 
-            <div className="mb-4">
-              <div className="flex justify-between mb-1 text-sm">
-                <span>Low</span>
-                <span>Normal</span>
-                <span>High</span>
+            {formSubmitted ? (
+              <div className="bg-green-100 border border-green-200 text-green-800 rounded-md p-4 mb-4 text-center">
+                Thank you! We'll be in touch soon.
               </div>
-              <Progress value={sliderValue} className="h-2 bg-gray-200" />
-            </div>
-
-            <div className="mb-8">
-              <div className="flex justify-between mb-1 text-sm">
-                <span>18-29 years</span>
-                <span>30-49 years</span>
-                <span>50+ years</span>
-              </div>
-              <Progress value={40} className="h-2 bg-gray-200" />
-            </div>
-
-            <Button className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white py-3">
-              START AN ASSESSMENT →
-            </Button>
+            ) : (
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                  <FormItem>
+                    <FormLabel>Full Name</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="John Doe"
+                        {...form.register("name", { required: true })}
+                      />
+                    </FormControl>
+                  </FormItem>
+                  
+                  <FormItem>
+                    <FormLabel>Email</FormLabel>
+                    <FormControl>
+                      <Input
+                        type="email"
+                        placeholder="you@example.com"
+                        {...form.register("email", { required: true })}
+                      />
+                    </FormControl>
+                  </FormItem>
+                  
+                  <FormItem>
+                    <FormLabel>Age Range</FormLabel>
+                    <Select onValueChange={(value) => form.setValue("age", value)} defaultValue={form.getValues("age")}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select your age range" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="18-29">18-29 years</SelectItem>
+                        <SelectItem value="30-49">30-49 years</SelectItem>
+                        <SelectItem value="50+">50+ years</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                  
+                  <Button type="submit" className="w-full bg-brand-orange hover:bg-brand-orange/90 text-white py-3">
+                    START AN ASSESSMENT →
+                  </Button>
+                </form>
+              </Form>
+            )}
           </div>
         </div>
       </div>
